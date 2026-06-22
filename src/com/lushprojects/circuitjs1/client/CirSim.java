@@ -288,6 +288,7 @@ public class CirSim implements NativePreviewHandler {
     
     void onTimeStep() {
 	scopeManager.timeStep();
+	jsInterface.checkVoltageListeners();
 	jsInterface.callTimeStepHook();
     }
 
